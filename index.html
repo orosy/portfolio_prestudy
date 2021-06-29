@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <title>Orosy's Portfolio</title>
-  <meta name="description" content="Portfolio for frontend engineer Orosy">
-  <meta name="author" content="Orosy">
-  <link rel="icon" type="image/png" href="./images/favicon.png">
-  <script src="https://kit.fontawesome.com/9c41976a5e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./main.css">
-  <script src="./main.js" defer></script>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <a href="#">
-        <img src="./images/favicon.png" alt="logo">
-        <span>Orosy</span>
-      </a>
-    </div>
-    <div class="navbar__menu">
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">홈</li>
-        <li class="navbar__menu__item">소개</li>
-        <li class="navbar__menu__item">기술</li>
-        <li class="navbar__menu__item">사진</li>
-        <li class="navbar__menu__item">한줄평</li>
-        <li class="navbar__menu__item">연락처</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Orosy's Portfolio</title>
+    <meta name="description" content="Portfolio for frontend engineer Orosy" />
+    <meta name="author" content="Orosy" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/9c41976a5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar_logo">
+        <a href="#">
+          <img src="./images/favicon.png" alt="logo" />
+          <span>Orosy</span>
+        </a>
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item">홈</li>
+        <li class="navbar_menu_item">소개</li>
+        <li class="navbar_menu_item">기술</li>
+        <li class="navbar_menu_item">사진</li>
+        <li class="navbar_menu_item">한줄평</li>
+        <li class="navbar_menu_item">연락처</li>
       </ul>
-    </div>
-  </nav>
-  <!-- 소개 -->
-  <section id="about"></section>
-  <!-- 기술 -->
-  <section id="skills"></section>
-  <!-- 사진 -->
-  <section id="photos"></section>
-  <!-- 한줄평 -->
-  <section id="testimonials"></section>
-  <!-- 연락처 -->
-  <section id="contact"></section>
-</body>
+    </nav>
+    <!-- 소개 -->
+    <section id="home">
+      <img
+        src="./images/profile.png"
+        alt="Orosy's profile photo"
+        class="home_profile"
+      />
+      <h1 class="home_title">안녕하세요! <br />24기 >wecoder 김태수입니다.</h1>
+      <h2 class="home_description">
+        "인생은 속도가 아니라 방향이다" <br />
+        현재 딛고 있는 이 길이 나에게 옳은 길이라 믿으며, '선한 영향력'을 끼칠
+        수 있는 사람이 되자는 인생의 큰 목표와 함께 꼭 그러한 프론트엔드
+        개발자가 되려 합니다.
+      </h2>
+      <button class="home_contact">Contact Me</button>
+    </section>
+    <!-- 소개 -->
+    <section id="about"></section>
+    <!-- 기술 -->
+    <section id="skills"></section>
+    <!-- 사진 -->
+    <section id="photos"></section>
+    <!-- 한줄평 -->
+    <section id="testimonials"></section>
+    <!-- 연락처 -->
+    <section id="contact"></section>
+  </body>
 </html>
