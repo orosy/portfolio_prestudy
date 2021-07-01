@@ -10,6 +10,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
+  --color-green: #8fe594;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -40,6 +41,13 @@ body {
 a {
   text-decoration: none;
   color: var(--color-white);
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -76,7 +84,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-blue);
+  background-color: var(--color-green);
   color: var(--color-white);
   padding: 16px;
 }
@@ -108,4 +116,34 @@ p {
 
 .navbar__menu__item:hover {
   background-color: darkblue;
+}
+
+/* Home */
+#home {
+  background: url("./images/background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__profile {
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--color-light-white);
+  border-radius: 50%;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+  padding: 12px 0;
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
 }
