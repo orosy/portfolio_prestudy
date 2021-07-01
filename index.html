@@ -8,34 +8,41 @@
     <title>Orosy's Portfolio</title>
     <meta name="description" content="Portfolio for frontend engineer Orosy" />
     <meta name="author" content="Orosy" />
+
     <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+
     <script
       src="https://kit.fontawesome.com/9c41976a5e.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
     <script src="./main.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <div class="navbar_logo">
+      <div class="navbar__logo">
         <a href="#">
           <img src="./images/favicon.png" alt="logo" />
           <span>Orosy</span>
         </a>
       </div>
-      <ul class="navbar_menu">
-        <li class="navbar_menu_item">홈</li>
-        <li class="navbar_menu_item">소개</li>
-        <li class="navbar_menu_item">관심</li>
-        <li class="navbar_menu_item">사진</li>
-        <li class="navbar_menu_item">한줄평</li>
-        <li class="navbar_menu_item">연락처</li>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">홈</li>
+        <li class="navbar__menu__item">소개</li>
+        <li class="navbar__menu__item">관심</li>
+        <li class="navbar__menu__item">사진</li>
+        <li class="navbar__menu__item">한줄평</li>
+        <li class="navbar__menu__item">연락처</li>
       </ul>
     </nav>
     <!-- 홈 -->
@@ -43,16 +50,16 @@
       <img
         src="./images/profile.png"
         alt="Orosy's profile photo"
-        class="home_profile"
+        class="home__profile"
       />
-      <h1 class="home_title">안녕하세요! <br />24기 >wecoder 김태수입니다.</h1>
-      <h2 class="home_description">
+      <h1 class="home__title">안녕하세요! <br />24기 >wecoder 김태수입니다.</h1>
+      <h2 class="home__description">
         "인생은 속도가 아니라 방향이다" <br />
         현재 딛고 있는 이 길이 나에게 옳은 길이라 믿으며, '선한 영향력'을 끼칠
         수 있는 사람이 되자는 인생의 큰 목표와 함께 꼭 그러한 프론트엔드
         개발자가 되려 합니다.
       </h2>
-      <button class="home_contact">Contact Me</button>
+      <button class="home__contact">Contact Me</button>
     </section>
     <!-- 소개 -->
     <section id="about">
@@ -65,51 +72,51 @@
         단순히 경제적 수단의 "일"로 그치는 것이 아닌 즐길 수 있는 "취미이자
         직업", 그것이 저에게 개발의 길임을 믿고 나아가보려 합니다.
       </p>
-      <div class="about_fields">
+      <div class="about__fields">
         <div class="field">
-          <div class="field_icon">
+          <div class="field__icon">
             <i class="fas fa-user-md"></i>
           </div>
-          <h2 class="field_title">Digital Healthcare</h2>
-          <p class="field_description">AI Doctor와 같은 건강 관련 웹 서비스</p>
+          <h2 class="field__title">Digital Healthcare</h2>
+          <p class="field__description">AI Doctor와 같은 건강 관련 웹 서비스</p>
         </div>
         <div class="field">
-          <div class="field_icon">
+          <div class="field__icon">
             <i class="fas fa-plane-departure"></i>
           </div>
-          <h2 class="field_title">Travel</h2>
-          <p class="field_description">
+          <h2 class="field__title">Travel</h2>
+          <p class="field__description">
             야놀자, 여기어때, 마이리얼트립과 같은 여행 플랫폼
           </p>
         </div>
         <div class="field">
-          <div class="field_icon">
+          <div class="field__icon">
             <i class="fas fa-shipping-fast"></i>
           </div>
-          <h2 class="field_title">E-Commerce</h2>
-          <p class="field_description">
+          <h2 class="field__title">E-Commerce</h2>
+          <p class="field__description">
             무신사, 마켓컬리, 오늘의 집 등의 다양한 이커머스
           </p>
         </div>
       </div>
-      <div class="about_careers">
+      <div class="about__careers">
         <div class="career">
           <img
             src="./images/careers/wecode.png"
             alt="Wecode's logo"
-            class="career_logo"
+            class="career__logo"
           />
-          <p class="career_name">위코드 프론트엔드 개발자 과정</p>
-          <p class="career_period">2021. 08. 02 ~ 2021. 10. 29</p>
+          <p class="career__name">위코드 프론트엔드 개발자 과정</p>
+          <p class="career__period">2021. 08. 02 ~ 2021. 10. 29</p>
         </div>
         <div class="career">
           <img
             src="./images/careers/gooddoc.png"
             alt="Good Doctor's logo"
-            class="career_logo"
+            class="career__logo"
           />
-          <p class="career_name">비바이노베이션 프론트엔드 개발자</p>
-          <p class="career_period">2021. 11. 14 ~ 재직중</p>
+          <p class="career__name">비바이노베이션 프론트엔드 개발자</p>
+          <p class="career__period">2021. 11. 14 ~ 재직중</p>
         </div>
       </div>
     </section>
@@ -124,66 +131,66 @@
       </p>
       <div class="table">
         <div class="table left">
-          <h3 class="table_title">관심</h3>
+          <h3 class="table__title">관심</h3>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>개발</span>
               <span>100%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>개발</span>
               <span>100%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>유튜브</span>
               <span>90%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>넷플릭스</span>
               <span>60%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>친구 만나기</span>
               <span>70%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
           <div class="interest">
-            <div class="interest_description">
+            <div class="interest__description">
               <span>백신</span>
               <span>66%</span>
             </div>
-            <div class="interest_bar">
-              <div class="interest_value"></div>
+            <div class="interest__bar">
+              <div class="interest__value"></div>
             </div>
           </div>
         </div>
-        <div class="table_right">
+        <div class="table__right">
           <div class="wishlists">
-            <h3 class="table_title">위시리스트</h3>
-            <ul class="wishlists_list">
+            <h3 class="table__title">위시리스트</h3>
+            <ul class="wishlists__list">
               <li>해외여행 가기</li>
               <li>운동하기</li>
               <li>마스크 안쓰기</li>
@@ -192,8 +199,8 @@
             </ul>
           </div>
           <div class="goals">
-            <h3 class="table_title">목표</h3>
-            <ul class="goals_list">
+            <h3 class="table__title">목표</h3>
+            <ul class="goals__list">
               <li>개발자 되기</li>
               <li>3대 500 치기</li>
               <li>건물주 되기</li>
@@ -206,62 +213,62 @@
     <section id="photos">
       <h1>사진</h1>
       <h3>나의 사진들</h3>
-      <div class="photo_categories">
-        <button class="category_btn">
+      <div class="photo__categories">
+        <button class="category__btn">
           전체
-          <span class="category_count">4</span>
+          <span class="category__count">4</span>
         </button>
-        <button class="category_btn">
+        <button class="category__btn">
           호주
-          <span class="category_count">1</span>
+          <span class="category__count">1</span>
         </button>
-        <button class="category_btn">
+        <button class="category__btn">
           태국
-          <span class="category_count">1</span>
+          <span class="category__count">1</span>
         </button>
-        <button class="category_btn">
+        <button class="category__btn">
           크로아티아
-          <span class="category_count">1</span>
+          <span class="category__count">1</span>
         </button>
-        <button class="category_btn">
+        <button class="category__btn">
           슬로베니아
-          <span class="category_count">1</span>
+          <span class="category__count">1</span>
         </button>
       </div>
-      <div class="photo_mine">
+      <div class="photo__mine">
         <img
-          class="photo_img"
+          class="photo__img"
           src="./images/photos/Croatia.png"
           alt="Croatia"
         />
-        <div class="photo_description">
+        <div class="photo__description">
           <h3>크로아티아 두브로브니크</h3>
           <span>여행사 출장 중 두브로브니크 레스토랑에서</span>
         </div>
         <img
-          class="photo_img"
+          class="photo__img"
           src="./images/photos/Australia.png"
           alt="Australia"
         />
-        <div class="photo_description">
+        <div class="photo__description">
           <h3>호주 블루마운틴</h3>
           <span>호주 블루마운틴의 절벽에서</span>
         </div>
         <img
-          class="photo_img"
+          class="photo__img"
           src="./images/photos/Thailand.png"
           alt="Thailand"
         />
-        <div class="photo_description">
+        <div class="photo__description">
           <h3>태국 아유타야</h3>
           <span>타이 족의 왕국, 아유타야에서</span>
         </div>
         <img
-          class="photo_img"
+          class="photo__img"
           src="./images/photos/Slovenia.png"
           alt="Slovenia"
         />
-        <div class="photo_description">
+        <div class="photo__description">
           <h3>슬로베니아 블레드</h3>
           <span>슬로베니아 블레드 성모승천교회 안에서</span>
         </div>
@@ -274,11 +281,11 @@
       <div class="testimonials">
         <div class="testimonial">
           <img
-            class="testimonial_profile"
+            class="testimonial__profile"
             src="./images/testimonials/YSW.png"
             alt="YSW"
           />
-          <div class="testimonial_bubble">
+          <div class="testimonial__bubble">
             <p>
               미국 포브스(Forbes) 선정할 예정인 '2022년 아시아 글로벌 리더
               300인'에 한국의 청년 김태수
@@ -288,11 +295,11 @@
         </div>
         <div class="testimonial">
           <img
-            class="testimonial_profile"
+            class="testimonial__profile"
             src="./images/testimonials/YSW.png"
             alt="YSW"
           />
-          <div class="testimonial_bubble">
+          <div class="testimonial__bubble">
             <p>
               상승과 하강으로 '명징'하게 '직조'해낸 신랄하면서 처연한 김태수
             </p>
@@ -303,9 +310,9 @@
     </section>
     <!-- 연락처 -->
     <section id="contact">
-      <h1 class="contact_title">Contact</h1>
-      <h2 class="contact_email">hanei7632@gmail.com</h2>
-      <div class="contact_links">
+      <h1 class="contact__title">Contact</h1>
+      <h2 class="contact__email">hanei7632@gmail.com</h2>
+      <div class="contact__links">
         <a href="https://github.com/orosy" target="_blank">
           <i class="fab fa-github-square"></i>
         </a>
@@ -316,7 +323,7 @@
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-      <p class="contact_rights">2021 Orosy - All rights reserved</p>
+      <p class="contact__rights">2021 Orosy - All rights reserved</p>
     </section>
   </body>
 </html>
