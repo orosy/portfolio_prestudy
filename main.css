@@ -342,8 +342,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 240px;
   margin: 2px;
   background-color: var(--color-light-white);
 }
@@ -399,7 +399,6 @@ p {
 
 .testimonial {
   display: flex;
-  justify-content: center;
   margin: 32px 0;
 }
 
