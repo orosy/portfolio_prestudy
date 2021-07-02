@@ -11,6 +11,7 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-green: #72cc94;
+  --color-light-green: #c9e265;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -118,7 +119,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: darkblue;
+  background-color: var(--color-light-green);
 }
 
 /* Home */
@@ -373,7 +374,7 @@ p {
 }
 
 .photo__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .photo__description h3::after {
