@@ -57,7 +57,7 @@
       <button class="home__contact">Contact Me</button>
     </section>
     <!-- 소개 -->
-    <section id="about">
+    <section id="about" class="section section__container">
       <h1>소개</h1>
       <p>
         여행 상품 운영자로 근무를 했지만, 코로나로 인해 미래가 불투명한 상황
@@ -101,8 +101,10 @@
             alt="Wecode's logo"
             class="career__logo"
           />
-          <p class="career__name">위코드 프론트엔드 개발자 과정</p>
-          <p class="career__period">2021. 08. 02 ~ 2021. 10. 29</p>
+          <div class="career__description">
+            <p class="career__name">위코드 프론트엔드 개발자 과정</p>
+            <p class="career__period">2021. 08. 02 ~ 2021. 10. 29</p>
+          </div>
         </div>
         <div class="career">
           <img
@@ -110,22 +112,25 @@
             alt="Good Doctor's logo"
             class="career__logo"
           />
-          <p class="career__name">비바이노베이션 프론트엔드 개발자</p>
-          <p class="career__period">2021. 11. 14 ~ 재직중</p>
+          <div class="career__description">
+            <p class="career__name">비바이노베이션 프론트엔드 개발자</p>
+            <p class="career__period">2021. 11. 14 ~ 재직중</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- 관심 -->
-    <section id="interests">
-      <h1>관심</h1>
+    <section id="interests" class="section">
+      <div class="section__container">
+        <h1>관심</h1>
       <h2>관심 및 위시리스트</h2>
       <p>
         거창하게 저의 관심 분야 알려드리기 보다는, 사실 그렇게 대단하게 하는
-        것들이 없기 떄문에 간단히 요즘 시간을 어떻게 보내는지와 해야되는데 아직
+        것들이 없기 때문에 간단히 요즘 시간을 어떻게 보내는지와 해야되는데 아직
         하지 않아서 마음의 죄책감을 느끼는 것들에 대해서 적어보았습니다.
       </p>
       <div class="table">
-        <div class="table left">
+        <div class="table__left">
           <h3 class="table__title">관심</h3>
           <div class="interest">
             <div class="interest__description">
@@ -133,16 +138,7 @@
               <span>100%</span>
             </div>
             <div class="interest__bar">
-              <div class="interest__value"></div>
-            </div>
-          </div>
-          <div class="interest">
-            <div class="interest__description">
-              <span>개발</span>
-              <span>100%</span>
-            </div>
-            <div class="interest__bar">
-              <div class="interest__value"></div>
+              <div class="interest__value" style="width: 100%"></div>
             </div>
           </div>
           <div class="interest">
@@ -150,8 +146,8 @@
               <span>유튜브</span>
               <span>90%</span>
             </div>
-            <div class="interest__bar">
-              <div class="interest__value"></div>
+            <div class="interest__bar" >
+              <div class="interest__value" style="width: 90%"></div>
             </div>
           </div>
           <div class="interest">
@@ -160,7 +156,7 @@
               <span>60%</span>
             </div>
             <div class="interest__bar">
-              <div class="interest__value"></div>
+              <div class="interest__value" style="width: 60%"></div>
             </div>
           </div>
           <div class="interest">
@@ -169,7 +165,7 @@
               <span>70%</span>
             </div>
             <div class="interest__bar">
-              <div class="interest__value"></div>
+              <div class="interest__value" style="width: 70%"></div>
             </div>
           </div>
           <div class="interest">
@@ -178,7 +174,7 @@
               <span>66%</span>
             </div>
             <div class="interest__bar">
-              <div class="interest__value"></div>
+              <div class="interest__value" style="width: 66%"></div>
             </div>
           </div>
         </div>
@@ -204,12 +200,13 @@
         </div>
       </div>
     </section>
+      </div>
     <!-- 사진 -->
-    <section id="photos">
+    <section id="photos" class="section">
       <h1>사진</h1>
       <h3>나의 사진들</h3>
       <div class="photo__categories">
-        <button class="category__btn">
+        <button class="category__btn active">
           전체
           <span class="category__count">4</span>
         </button>
@@ -231,24 +228,29 @@
         </button>
       </div>
       <div class="photo__mine">
-        <img
-          class="photo__img"
-          src="./images/photos/Croatia.png"
-          alt="Croatia"
-        />
-        <div class="photo__description">
-          <h3>크로아티아 두브로브니크</h3>
-          <span>여행사 출장 중 두브로브니크 레스토랑에서</span>
+        <div class="photo">
+          <img
+            class="photo__img"
+            src="./images/photos/Croatia.png"
+            alt="Croatia"
+          />
+          <div class="photo__description">
+            <h3>크로아티아 두브로브니크</h3>
+            <span>여행사 출장 중 두브로브니크 레스토랑에서</span>
+          </div>
         </div>
-        <img
-          class="photo__img"
-          src="./images/photos/Australia.png"
-          alt="Australia"
-        />
-        <div class="photo__description">
-          <h3>호주 블루마운틴</h3>
-          <span>호주 블루마운틴의 절벽에서</span>
+        <div class="photo">
+          <img
+            class="photo__img"
+            src="./images/photos/Australia.png"
+            alt="Australia"
+          />
+          <div class="photo__description">
+            <h3>호주 블루마운틴</h3>
+            <span>호주 블루마운틴의 절벽에서</span>
+          </div>
         </div>
+      <div class="photo">
         <img
           class="photo__img"
           src="./images/photos/Thailand.png"
@@ -258,6 +260,8 @@
           <h3>태국 아유타야</h3>
           <span>타이 족의 왕국, 아유타야에서</span>
         </div>
+      </div>
+      <div class="photo">
         <img
           class="photo__img"
           src="./images/photos/Slovenia.png"
@@ -268,9 +272,10 @@
           <span>슬로베니아 블레드 성모승천교회 안에서</span>
         </div>
       </div>
+    </div>
     </section>
     <!-- 한줄평 -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>한줄평</h1>
       <h3>주변 지인들의 솔직한 한줄평</h3>
       <div class="testimonials">
@@ -279,6 +284,7 @@
             class="testimonial__profile"
             src="./images/testimonials/YSW.png"
             alt="YSW"
+            style="display: none;"
           />
           <div class="testimonial__bubble">
             <p>
@@ -292,19 +298,20 @@
           <img
             class="testimonial__profile"
             src="./images/testimonials/JHY.png"
-            alt="YSW"
+            alt="JHY"
+            style="display: none;"
           />
           <div class="testimonial__bubble">
             <p>
               상승과 하강으로 '명징'하게 '직조'해낸 신랄하면서 처연한 김태수
             </p>
-            <p class="name">전 모씨<span>OO관광공사</span></p>
+            <p class="name">전 모씨<span>OO관광공사 강원지사</span></p>
           </div>
         </div>
       </div>
     </section>
     <!-- 연락처 -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Contact</h1>
       <h2 class="contact__email">hanei7632@gmail.com</h2>
       <div class="contact__links">
