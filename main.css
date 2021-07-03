@@ -34,7 +34,7 @@
 
 /* Universal tags */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;]
 }
 
 body {
@@ -81,6 +81,7 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+  line-height: 28px;
 }
 
 /* Navbar */
@@ -120,6 +121,15 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-light-green);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
 }
 
 /* Home */
@@ -293,6 +303,10 @@ p {
 .goals {
   padding: 20px;
 }
+.wishlists li,
+.goals li {
+  line-height: 22px;
+}
 
 /* Photo */
 .photo__categories {
@@ -303,7 +317,7 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: 4px;
   font-size: var(--font-regular);
-  padding: 8px 48px;
+  padding: 8px 36px;
 }
 
 .category__btn.active,
@@ -420,13 +434,14 @@ p {
 
 .testimonial__bubble {
   width: 1000px;
-  padding: 70px;
+  padding: 30px;
   background-color: var(--color-white);
   border-radius: 4px;
 }
 
 .testimonial__bubble .name {
   color: var(--color-green);
+  margin-top: 40px;
 }
 
 .testimonial__bubble span {
@@ -463,4 +478,48 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__fields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .field {
+    margin-bottom: 32px;
+  }
+
+  .table {
+    flex-direction: column;
+  }
+
+  .photo {
+    flex-grow: 1;
+  }
+
+  .category__btn {
+    margin-bottom: 8px;
+  }
+
+  .testimonial__profile {
+    width: 80px;
+    height: 80px;
+  }
 }
