@@ -34,7 +34,7 @@
 
 /* Universal tags */
 * {
-  box-sizing: border-box;]
+  box-sizing: border-box;
 }
 
 body {
@@ -139,11 +139,47 @@ p {
   text-align: center;
 }
 
+.container {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  perspective: 300px;
+}
+
+.container .item {
+  width: 250px;
+  height: 250px;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
 .home__profile {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
   border: 2px solid var(--color-light-white);
   border-radius: 50%;
+}
+
+.container .item.front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+
+.container:hover .item.front {
+  transform: rotateY(180deg);
+}
+.container .item.back {
+  transform: rotateY(-180deg);
+}
+.container:hover .item.back {
+  transform: rotateY(0deg);
+}
+
+.container .item.back span {
+  padding-top: 200px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
 }
 
 .home__title,
@@ -485,6 +521,7 @@ p {
   .navbar__toggle-btn {
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
